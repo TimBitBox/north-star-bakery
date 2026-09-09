@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Contact and preorder requests | North Star Bakery</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body class="contact">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <p class="brand">
+        North Star Bakery
+      </p>
+      <nav aria-label="Primary">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="products.html">Our menu</a>
+          </li>
+          <li>
+            <a href="about.html">Our bakery</a>
+          </li>
+          <li>
+            <a aria-current="page" href="contact.html">Contact & preorders</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-content">
+      <h1 class="page-title">Contact and preorder requests</h1>
+      <div class="contact-sections">
+        <section id="visit">
+          <h2>Visit the bakery</h2>
+          <address>
+            North Star Bakery
+            <br/>
+            123 Main Street
+            <br/>
+            Near the neighborhood square
+          </address>
+          <h3>Hours</h3>
+          <ul>
+            <li>
+              Tuesday to Friday: 7 a.m. to 5 p.m.
+            </li>
+            <li>
+              Saturday and Sunday: 8 a.m. to 2 p.m.
+            </li>
+            <li>
+              Monday: closed
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Tell us how we can help</h2>
+          <p id="form-help">
+            Required fields are marked below. Include your preferred items and pickup date so our team can review availability.
+          </p>
+          <form action="contact.html#request" aria-describedby="form-help" id="request" method="get">
+            <fieldset>
+              <legend>Your contact information</legend>
+              <p>
+                <label for="name">Name (required)</label>
+                <br/>
+                <input autocomplete="name" id="name" maxlength="80" minlength="2" name="name" required="" type="text"/>
+              </p>
+              <p>
+                <label for="email">Email (required)</label>
+                <br/>
+                <input autocomplete="email" id="email" maxlength="120" name="email" required="" type="email"/>
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Your bakery request</legend>
+              <p>
+                <label for="request-type">Request type (required)</label>
+                <br/>
+                <select id="request-type" name="request-type" required="">
+                  <option value="">Choose a request type</option>
+                  <option value="preorder">Preorder request</option>
+                  <option value="question">General question</option>
+                </select>
+              </p>
+              <p>
+                <label for="pickup">Preferred pickup date (optional)</label>
+                <br/>
+                <input aria-describedby="pickup-help" id="pickup" name="pickup" type="date"/>
+              </p>
+              <p id="pickup-help">
+                For preorders, choose a day we are open. Availability is confirmed before an order is accepted.
+              </p>
+              <p>
+                <label for="details">Item details or question (required)</label>
+                <br/>
+                <textarea aria-describedby="details-help" cols="30" id="details" maxlength="1000" minlength="10" name="details" required="" rows="5"></textarea>
+              </p>
+              <p id="details-help">
+                Include items, quantities, or cake serving counts. For a general question, explain how we can help.
+              </p>
+              <p>
+                <label for="allergies">Allergy notes (optional)</label>
+                <br/>
+                <textarea aria-describedby="allergy-help" cols="30" id="allergies" maxlength="500" name="allergies" rows="3"></textarea>
+              </p>
+              <p id="allergy-help">
+                Tell us about relevant allergies. Do not assume any item is free from cross-contact.
+              </p>
+            </fieldset>
+            <button type="submit">
+              Check request details
+            </button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>
+        © 2026 North Star Bakery
+      </p>
+      <p>
+        123 Main Street · Tuesday–Friday 7–5 · Saturday–Sunday 8–2
+      </p>
+    </footer>
+  </body>
+</html>

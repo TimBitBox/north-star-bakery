@@ -5,6 +5,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <title>Breads, pastries, and cakes | North Star Bakery</title>
     <link href="styles.css" rel="stylesheet"/>
+    <script src="script.js" defer></script>
   </head>
   <body class="products">
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -31,6 +32,14 @@
     </header>
     <main id="main-content">
       <h1 class="page-title">Breads, pastries, and cakes</h1>
+      <section class="favorites-panel" aria-labelledby="favorites-heading">
+        <h2 id="favorites-heading">Save your bakery favorites</h2>
+        <p>Keep a list for your next visit or preorder.</p>
+        <div id="favorite-options" class="favorite-options"></div>
+        <p id="favorites-summary" role="status"></p>
+    
+        <a href="contact.html#request">Use favorites in a preorder</a>
+      </section>
       <div class="product-sections">
         <section class="bread-section">
           <h2>Breads</h2>
